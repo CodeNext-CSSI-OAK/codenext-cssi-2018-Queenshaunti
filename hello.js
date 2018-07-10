@@ -1,4 +1,7 @@
 // Author: Shauntiara Williams
+let readline = require('readline-sync');
 
-console.log('Hello Mouth breather');
-console.log('Im in a code next group with people who make me feel strange @_@ help...' );
+let age = Number(readline.question('How old are you? '));
+
+
+console.log('In 2020 you\'ll be ' + ( age + 2 ) + 'years old');
