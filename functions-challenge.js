@@ -15,11 +15,22 @@ sumDouble(2, 2) → 8
 *******************************************************************************/
 
 
-function sumDouble(a, b) {
-
+function sumDouble(a,b) {
+  if (a === b){
+    console.log("equal");
+    return (a + b)  * 2;
+  } else {
+    console.log('not equal');
+    return a + b;
+  }
 }
 
 
+
+//function subtract(num1 = 0, num2 = 0) {
+//  return num1 - num2;
+//  let result = subtract(6,4);
+//  console.log('the result is: ' + result);
 /******************************************************************************
                                    makes10
 
@@ -35,6 +46,12 @@ makes10(1, 9) → true
 
 
 function makes10(a, b) {
+  if (a === 10 || b === 10 || a + b === 10){
+    return true;
+ }else{
+   return false;
+
+ }
 
 }
 
@@ -55,6 +72,12 @@ parrotTrouble(false, 6) → false
 *******************************************************************************/
 
 function parrotTrouble(talking, hour) {
+  if (talking === true && (hour < 7 || hour > 20)){
+    return true;
+  }else{
+    return false;
+
+  }
 
 }
 
@@ -76,7 +99,22 @@ alarmClock(0, false) → "10:00"
 *******************************************************************************/
 
 function alarmClock(day, vacation) {
+  if (day >= 1 && day <= 5){
+    if (vacation === false){
+      return "7:00";
+    }else{
+      return "10:00"
+    }
 
+  }else{
+    if(vacation === true){
+      return "off"
+    }else{
+      return "10:00";
+    }
+
+
+  }
 }
 
 
@@ -98,8 +136,18 @@ caughtSpeeding(65, true) → 0
 *******************************************************************************/
 
 function caughtSpeeding(speed, isBirthday) {
+  if (isBirthday){
+    speed -= 5;
+  }
 
-}
+   if (speed  <= 60){
+     return 0
+   }else if (speed >= 61 && speed <= 80){
+     return "1"
+   }else{
+     return "2"
+   }
+ }
 
 /****************************************************************************
                                     Tests

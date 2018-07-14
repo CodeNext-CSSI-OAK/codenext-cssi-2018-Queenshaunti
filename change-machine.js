@@ -4,6 +4,7 @@ let readline = require('readline-sync');
 let cents = Number(readline.question('Please enter cents as a positive integer: '));
 let quarters = Math.floor(cents / 25);
 console.log('quarters =' + quarters);
+ //cents -= quaters * 25
 
 let remainderDimes = Math.floor(cents % 25);
 let dimes = Math.floor( remainderDimes/10);
