@@ -216,12 +216,11 @@ function sayNumber(num) {
   number in word form.
 *******************************************************************************/
 function run() {
+    printGreeting();
   let num = Number (readline.question("Enter number between 0 - 9999: "));
-  console.log("sayZeroNine "+ sayZeroNine(num))
-  console.log("sayTenNineteen "+sayTenNineteen(num));
-  console.log("sayTwentyNinety "+ sayTwentyNinety(num));
-  console.log("sayNumber "+ sayNumber(num));
-  printGreeting();
+
+
+  console.log("Word Form: " + sayNumber(num));
 
 
 
