@@ -1,4 +1,4 @@
-//Author: FirstName LastName
+//Author: Shauntiara LastName
 
 /******************************************************************************
                                    stringTimes()
@@ -14,9 +14,14 @@ stringTimes("Hi", 1) → "Hi"
 *******************************************************************************/
 
 function stringTimes(str, n) {
+let returnString = "";
+let i = 0
+for (let i = 0; i < n; i ++){
+  returnString+= str;
 
 }
-
+return returnString;
+}
 // Test this function.
 testStringTimes();
 
@@ -34,7 +39,13 @@ countXX("xxxx") → 3
 *******************************************************************************/
 
 function countXX(str) {
-
+let count = 0;
+for (let i = 0; i < str.length - 1;i++){
+    if (str.substring (i, i + 2) === 'xx'){
+      count++;
+    }
+}
+return count;
 }
 
 // Test this function.

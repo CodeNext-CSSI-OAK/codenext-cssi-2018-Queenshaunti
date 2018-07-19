@@ -16,10 +16,14 @@ withoutEnd("coding") → "odin"
 
 function withoutEnd(str) {
 
+   let firstCharAt = str.substring(1,str.length - 1) ;
+
+    return firstCharAt;
 }
 
 // Test this function.
 testWithoutEnd();
+console.log(withoutEnd("pizza"));
 
 /******************************************************************************
                                    frontAgain()
